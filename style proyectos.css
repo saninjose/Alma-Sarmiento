@@ -1,0 +1,326 @@
+*{ /* la estrella es un atributo
+	override cualquier cosa en el documento.
+	lo que esté referenciado a esta estrella será
+	a todos los elementos del html.*/
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 1080 px;
+  margin: auto;
+  display: block;
+}
+
+.contenedorvideo{
+	max-width: 1080px;
+	display: block;
+	margin: auto;
+}
+
+.contenedoraudio{
+	max-width: 1080px;
+	display: block;
+	margin: auto;
+}
+
+video {
+  width: 100%;
+	margin: auto;
+	display: block;
+}
+
+.iframe-container{
+  position: relative;
+  left: 50%;
+transform: translateX(-50%);
+  max-width: 1080px;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+ top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+
+@media only screen
+  and (max-width: 374px) {
+    video {
+      display: none;
+    }
+}
+
+/* links*/
+
+a{
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:hover {
+	color:rebeccapurple;
+  /*background-color: yellow;*/
+  text-decoration-line: line-through;
+}
+
+a:active {
+  color: whitesmoke;}
+
+
+
+#rastrerovolador a {text-decoration: none}
+
+h2 {
+	font-size: 16px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+p {margin: 10px;
+}
+
+/* barra de audio*/
+
+.barraudio {
+  width: 100%;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: none;
+}
+
+audio::-webkit-media-controls-timeline {
+  background-color: none;
+  border-radius: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* fin barra de audio*/
+
+/* cuerpo*/
+
+body {
+	font-size: 12em;
+	overflow: auto;
+	text-align: justify;
+  line-height: 1.5;
+	font-family: sans-serif;
+	font-style: normal;
+  background-color: yellow;
+  -webkit-tap-highlight-color: transparent; /* Makes the highlight invisible */
+}
+
+
+#headervolador{color: black;
+  float: left;
+text-align: center;
+font-weight: bold;
+width: 10%;
+margin-left: 1%;
+position: fixed;
+z-index: 99;
+}
+
+/* Esto no se usa pero está bien tenerlo por ahí sin ser borrado
+#headervoladorcentro{color: grey;
+  background-color: teal;
+  font-size: 10pt;
+  clear: both;
+text-align: center;
+font-weight: bold;
+margin: auto;
+width: 100%;
+position: fixed;
+z-index: 0;
+}
+*/
+
+#headervolador2{color: blue;
+  font-size: 1.5em;
+text-align: center;
+font-weight: bold;
+margin-left: 87.7%;
+width: 10%;
+position: fixed;
+z-index: 96;
+}
+
+.container{
+    display:grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: " fichatecesp fichatecesp dhkjas fichateceng fichateceng klasdlk"
+                       " descripciónesp descripciónesp descripciónesp descripcióneng descripcióneng descripcióneng"
+                       "dfsdfñls espaciofotos espaciofotos espaciofotos espaciofotos skldfjsl";
+  grid-gap: .5rem;
+  }
+ 
+#tituloproy{
+  font-size: 28pt;
+  color: rebeccapurple;
+  position: fixed;
+  grid-area: tituloproy;}
+
+#fichatecesp{
+  padding: 5%;
+  margin-bottom: -5%;
+  font-size: 12pt;
+  text-align: left;
+  grid-area: fichatecesp;
+}
+#fichateceng{
+   padding: 5%;
+   margin-bottom: -5%;
+  font-size: 12pt;
+  text-align: left;
+  color: grey;
+  grid-area: fichateceng;
+}
+
+#descripciónesp{
+  max-width: 95%;
+	text-align: left;
+  font-family: sans-serif;
+  grid-area: descripciónesp;}
+
+#descripcióneng{
+  max-width: 95%;
+	text-align: left;
+ font-family: sans-serif;
+  color: grey;
+  grid-area: descripcióneng;}
+
+#espaciofotos{
+  background-color: transparent;
+  grid-area: espaciofotos;
+  margin-top: 2%;
+  height: 100%;
+}
+
+  #contenidoadicional{
+  background-color: transparent;
+  grid-area: contenidoadicional;
+}
+
+#piedefoto{
+position: relative; 
+ color: black;
+ max-width: 1080px;
+  margin-top: -1.5%;
+  margin-bottom: 2.5%;
+  font-size: 10pt;
+}
+
+
+@media (max-width: 1550px){
+
+
+
+	img {
+		max-width: 100%;
+	  margin: auto;
+	  display: block;
+	}
+
+
+	#fichatecesp{
+    font-size: 10pt;
+	max-width: 95%;
+	}
+	#fichateceng{
+      font-size: 10pt;
+	  max-width: 95%;
+	}
+
+
+
+  body {
+  font-size: 12pt;
+}
+
+
+@media (max-width: 720px){
+
+  body {
+  font-size: 10pt;
+  overflow: auto;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+  .container{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+                      "fichatecesp fichateceng"
+                       "descripciónesp descripciónesp"
+                      "descripcióneng descripcióneng"
+                      "espaciofotos espaciofotos";
+                     
+  }
+
+#descripciónesp{
+  font-size: 12pt;
+  max-width: 100%;
+  text-align: left;
+  font-family: sans-serif;
+  grid-area: descripciónesp;}
+
+#descripcióneng{
+  font-size: 12pt;
+  max-width: 100%;
+  margin-bottom: 7%;
+  text-align: left;
+ font-family: sans-serif;
+  color: grey;
+  grid-area: descripcióneng;}
+
+  #espaciofotos{
+  background-color: transparent;
+  grid-area: espaciofotos;
+  margin-top: 0%;
+  height: 100%;
+}
+
+  #headervolador{color: midnightblue;
+  text-align: right;
+  font-weight: bold;
+  width: 97.5%;
+  position: fixed;
+  top: 0%;
+}
+
+#headervolador2{color: blue;
+  font-size: 1.5em;
+text-align: center;
+font-weight: bold;
+margin-left: 45%;
+width: 10%;
+ margin-top: -.5%;
+position: fixed;
+z-index: 96;
+}
+
+#tituloproy{
+  font-size: 16pt;
+  position: fixed;
+  grid-area: tituloproy;}
+
+#piedefoto{
+position: relative; 
+ color: black;
+ max-width: 1080px;
+  margin-top: -3%;
+  margin-bottom: 5%;
+  font-size: 10pt;
+}
+
+}
