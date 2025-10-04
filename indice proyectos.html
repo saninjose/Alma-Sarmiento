@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="style indice proyectos.css">
+    <title>Alma Sarmiento</title>
+     <link rel="icon" type="image/ico" img href="imagenes/favicon.png">
+  </head>
+
+  <body>
+
+ <div id="headervolador"><p><a href="index.html">ALMA</a></p></div>
+ <!--<div id="headervoladorcentro"><p></p></div>-->
+ <div id="headervolador2"><p><a href="index.html"></a></p></div>
+
+<!-- Control buttons -->
+<div id="sort-options">
+  <button class="btn active" onclick="filterSelection('all')"> TODAS / <font style="opacity: 30%;">ALL</b></font></button>
+
+  <button class="btn" onclick="filterSelection('publicaciones')"> PUBLICACIONES / <font style="opacity: 50%;">PUBLICATIONS</b></font></button>
+
+  <button class="btn" onclick="filterSelection('collage')"> COLLAGE<font style="opacity: 30%;"></b></font></button>
+
+  <button class="btn" onclick="filterSelection('editorial')"> CAT 3 / <font style="opacity: 30%;">CAT 3</b></font></button>
+
+  <button class="btn" onclick="filterSelection('grafico')"> CAT 4 / <font style="opacity: 30%;">CAT 4</b></font></button>
+
+</div>
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+
+<div class="containerproyectos">
+
+ <div class="filterItems publicaciones collage">
+     <a href="2016 atlas.html"><img src="imagenes/2016 atlas/0.png" width="100%"><div id="infoproy"><p class="nombreproyecto">Atlas</p><p class="año">2015 - </p></div></a>
+  </div>
+
+  <div class="filterItems instalacion">
+     <a href="proyecto1.html"><img src="imagenes/0.png" width="100%"><div id="infoproy"><p class="nombreproyecto">Proyecto</p><p class="año">año</p></div></a>
+  </div>
+
+    <div class="filterItems objetos">
+     <a href="proyecto2.html"><img src="imagenes/0.png" width="100%"><div id="infoproy"><p class="nombreproyecto">Proyecto</p><p class="año">año</p></div></a>
+  </div>
+
+    <div class="filterItems instalacion objetos">
+     <a href="proyecto3.html"><img src="imagenes/0.png" width="100%"><div id="infoproy"><p class="nombreproyecto">Proyecto</p><p class="año">año</p></div></a>
+  </div>
+
+  <div class="filterItems objetos">
+     <a href="proyecto4.html"><img src="imagenes/0.png" width="100%"><div id="infoproy"><p class="nombreproyecto">Proyecto</p><p class="año">año</p></div></a>
+  </div>
+
+    <div class="filterItems objetos">
+     <a href="proyecto5.html"><img src="imagenes/0.png" width="100%"><div id="infoproy"><p class="nombreproyecto">Proyecto</p><p class="año">año</p></div></a>
+  </div>
+
+  <div class="filterItems objetos">
+     <a href="proyecto6.html"><img src="imagenes/0.png" width="100%"><div id="infoproy"><p class="nombreproyecto">Proyecto</p><p class="año">año</p></div></a>
+  </div>
+
+  <div class="filterItems objetos">
+     <a href="proyecto7.html"><img src="imagenes/0.png" width="100%"><div id="infoproy"><p class="nombreproyecto">Proyecto</p><p class="año">año</p></div></a>
+  </div>
+
+  <div class="filterItems objetos">
+     <a href="proyecto8.html"><img src="imagenes/0.png" width="100%"><div id="infoproy"><p class="nombreproyecto">Proyecto</p><p class="año">año</p></div></a>
+  </div>
+
+   <div class="filterItems objetos">
+     <a href="proyecto9.html"><img src="imagenes/0.png" width="100%"><div id="infoproy"><p class="nombreproyecto">Proyecto</p><p class="año">año</p></div></a>
+  </div>
+
+   <div class="filterItems objetos">
+     <a href="proyecto10.html"><img src="imagenes/0.png" width="100%"><div id="infoproy"><p class="nombreproyecto">Proyecto</p><p class="año">año</p></div></a>
+  </div>
+
+
+
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  
+  let sortOptions = document.getElementById('sort-options')
+let btns = sortOptions.getElementsByClassName('btn')
+
+function filterSelection(str) {
+  let items = document.getElementsByClassName('filterItems')
+  
+  if(str == "all"){ str = "" }
+  
+  Array.from(items).forEach(item => {
+    removeClass(item, 'show')
+    if(item.className.indexOf(str) > -1){
+      addClass(item, 'show')
+      console.log("working")
+    }
+  })
+}
+
+function addClass(element, name){
+    let itemClass, itemName
+
+    itemClass = element.className.split(' ')
+    itemName = name.split(' ')
+
+    for(let i = 0; i < itemName.length; i++){
+      if(itemClass.indexOf(itemName[i]) == -1){
+        element.className += " " + itemName[i]
+      }
+    }
+}
+
+function removeClass(element, name){
+  let itemClass, itemName;
+  
+  itemClass = element.className.split(' ')
+  itemName = name.split(' ')
+  
+ for (i = 0; i < itemName.length; i++) {
+    while (itemClass.indexOf(itemName[i]) > -1) {
+      itemClass.splice(itemClass.indexOf(itemName[i]), 1);
+    }
+  }
+  element.className = itemClass.join(" ")
+}
+
+Array.from(btns).forEach((btn) => {
+  btn.addEventListener('click', () => {
+    let current = document.getElementsByClassName('active')
+    current[0].className = current[0].className.replace(' active', '')
+    this.className += ' active';
+  })
+})
+
+filterSelection("all")
+
+</script>
+
+  </body>
+</html>
