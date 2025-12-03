@@ -206,6 +206,7 @@ z-index: 96;
 }
 
 .espanol{
+  font-size: 2em;
   width: 100%;
   margin-top: 15%;
   height: 45vh;
@@ -217,13 +218,13 @@ z-index: 96;
   margin: 3%;
   padding: 25px;
   text-align: left;
-  font-size: 2em;
    max-width: 85%;
    max-height: 80%;
    overflow: scroll;
   z-index: 4;}
 
   .english{
+    font-size: 2em;
     background-color: transparent;
     margin-top: 1%;
   width: 100%;
@@ -236,7 +237,6 @@ z-index: 96;
 grey;
   padding: 25px;
   text-align: left;
-  font-size: 2em;
    max-width: 85%;
    max-height: 80%;
    overflow: scroll;
