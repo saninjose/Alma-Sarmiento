@@ -1,0 +1,250 @@
+
+
+body{
+  max-width: 100vw;
+  overflow: auto;
+  text-align: justify;
+  line-height: 1.5;
+  font-family: sans-serif;
+background-color: yellow;
+-webkit-tap-highlight-color: transparent; /* Makes the highlight invisible */
+}
+
+a {
+  color: blue; 
+  text-decoration: underline;
+}
+
+/* Styling the entire scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 0px;
+}
+
+/* Styling the scrollbar track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+/* Styling the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: purple;
+  border-radius: 2px;
+}
+
+   #headervolador{color: blue;
+text-align: left;
+font-weight: bold;
+width: 10%;
+margin-left: 1%;
+margin-top: 1%;
+position: fixed;
+z-index: 99;
+}
+
+#headervolador2{color: blue;
+text-align: right;
+justify-content: right;
+font-weight: bold;
+width: 10%;
+margin-left: 10%;
+margin-top: 1%;
+position: fixed;
+z-index: 96;
+}
+
+#headervolador3{color: blue;
+text-align: right;
+justify-content: right;
+font-weight: bold;
+width: 10%;
+margin-left: 15%;
+margin-top: 1%;
+position: fixed;
+z-index: 96;
+}
+
+.espanol{
+  position: relative;
+  width: 50%;
+  margin-top: 7%;
+  height: 80vh;
+  background-color: transparent;
+  float: left;
+}
+
+.textointroespanol{position: absolute;
+  margin: 3%;
+  color: rebeccapurple;
+  padding: 25px;
+  text-align: left;
+  font-size: 2em;
+   max-width: 85%;
+   max-height: 80%;
+   overflow: scroll;
+  z-index: 4;}
+
+.english{
+  position: relative;
+  width: 50%;
+  margin-top: 7%;
+  height: 80vh;
+  background-color: transparent;
+  float: left;
+}
+
+.textointroenglish{position: absolute;
+  color: grey;
+  margin: 3%;
+  padding: 25px;
+  text-align: left;
+  font-size: 2em;
+   max-width: 85%;
+   max-height: 80%;
+   overflow: scroll;
+  z-index: 4;}
+
+@media (max-width: 1023px){
+
+#headervolador{color: blue;
+float: left;
+text-align: left;
+font-weight: bold;
+width: 20%;
+margin-left: 1%;
+margin-top: 1%;
+position: fixed;
+z-index: 99;
+}
+
+#headervolador2{color: blue;
+text-align: right;
+justify-content: right;
+font-weight: bold;
+width: 10%;
+margin-left: 30%;
+margin-top: 1%;
+position: fixed;
+z-index: 96;
+}
+
+.espanol{
+  width: 100%;
+  margin-top: 13%;
+  height: 40vh;
+  background-color: transparent;
+  float: left;
+}
+
+.textointroespanol{position: absolute;
+  margin: 3%;
+  padding: 25px;
+  text-align: left;
+  font-size: 1.5em;
+   max-width: 85%;
+   max-height: 80%;
+   overflow: scroll;
+  z-index: 4;}
+
+.english{
+  width: 100%;
+    height: 40vh;
+  background-color: transparent;
+  clear: both;
+}
+
+.textointroenglish{position: absolute;
+  margin: 3%;
+  padding: 25px;
+  text-align: left;
+  font-size: 1.5em;
+   max-width: 85%;
+   max-height: 80%;
+   overflow: scroll;
+  z-index: 4;}
+
+}
+
+@media (max-width: 1080px){
+
+   #headervolador{color: blue;
+      font-size: 1.5em;
+  float: left;
+text-align: left;
+font-weight: bold;
+width: 30%;
+margin-left: 3%;
+margin-top: 1%;
+position: fixed;
+z-index: 99;
+}
+
+#headervolador2{color: blue;
+  background-color: transparent;
+  font-size: 1.5em;
+text-align: right;
+justify-content: right;
+font-weight: bold;
+width: 25%;
+margin-left: 30%;
+margin-top: 1%;
+position: fixed;
+z-index: 96;
+}
+
+#headervolador3{color: blue;
+text-align: right;
+justify-content: right;
+font-size: 1.5em;
+font-weight: bold;
+width: 10%;
+margin-left: 85%;
+margin-top: 1%;
+position: fixed;
+z-index: 96;
+}
+
+.espanol{
+  width: 100%;
+  margin-top: 15%;
+  height: 45vh;
+  background-color: transparent;
+  float: left;
+}
+
+.textointroespanol{position: absolute;
+  margin: 3%;
+  padding: 25px;
+  text-align: left;
+  font-size: 2em;
+   max-width: 85%;
+   max-height: 80%;
+   overflow: scroll;
+  z-index: 4;}
+
+  .english{
+    background-color: transparent;
+    margin-top: 1%;
+  width: 100%;
+    height: 45vh;
+  clear: both;
+}
+
+.textointroenglish{position: absolute;
+  margin: 3%;
+grey;
+  padding: 25px;
+  text-align: left;
+  font-size: 2em;
+   max-width: 85%;
+   max-height: 80%;
+   overflow: scroll;
+  z-index: 4;}
+
+}
+
+
+
+
+} 
