@@ -218,6 +218,7 @@ z-index: 96;
 
 #piedefoto{
   font-family: monospace;
+  text-align: left;
 position: relative; 
  color: black;
  max-width: 720px;
@@ -451,6 +452,7 @@ z-index: 96;
 
 #piedefoto{
 position: relative; 
+text-align: left;
  color: black;
  max-width: 1080px;
   margin-top: -2%;
