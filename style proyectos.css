@@ -9,6 +9,7 @@ img {
 	max-width: 1080 px;
   margin: auto;
   display: block;
+
 }
 
 .contenedorvideo{
@@ -165,21 +166,24 @@ z-index: 96;
  
 #tituloproy{
   font-size: 2em;
+  line-height: 1;
   color: rebeccapurple;
   position: fixed;
   grid-area: tituloproy;}
 
 #fichatecesp{
+  font-family: monospace;
   padding: 5%;
-  margin-bottom: -5%;
-  font-size: 12pt;
+  margin-bottom: 0%;
+  font-size: 1opt;
   text-align: left;
   grid-area: fichatecesp;
 }
 #fichateceng{
+  font-family: monospace;
    padding: 5%;
-   margin-bottom: -5%;
-  font-size: 12pt;
+   margin-bottom: 0%;
+  font-size: 1opt;
   text-align: left;
   color: grey;
   grid-area: fichateceng;
@@ -216,26 +220,86 @@ z-index: 96;
   font-family: monospace;
 position: relative; 
  color: black;
- max-width: 1080px;
+ max-width: 720px;
   margin-top: -1%;
   margin-bottom: 2.5%;
   font-size: 10pt;
 }
 
+#contenedorcorrespondencia{
+  background-color: blue;
+  position: relative;
+  max-height: 100%;
+  clear: both;
+}
 
   #descripcionintermedia{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 3%;
   margin-left: 3%;
-  width: 40%;
+  margin-bottom: 5%;
+  width: 45%;
   text-align: left;
-  font-family: sans-serif;
+  font-family: monospace;
+float: left;}
+
+#descripcionintermediaalma{
+    color: cornsilk;
+    background-color: rgba(0, 0, 1, 0.4);
+    padding: 3%;
+  margin-left: 3%;
+  margin-bottom: 5%;
+  width: 45%;
+  text-align: left;
+  font-family: monospace;
 float: left;}
 
    #descripcionintermedia2{
   margin-left: 3%;
- width: 40%;
+  color: grey;
+  margin-bottom: 5%;
+  padding: 3%;
+  background-color: rgba(255, 255, 255, 0.4);
+ width: 45%;
   text-align: left;
-  font-family: sans-serif;
+  font-family: monospace;
 float: right;}
+
+ #descripcionintermedia2alma{
+  color: lightgrey;
+  margin-left: 3%;
+  margin-bottom: 5%;
+  padding: 3%;
+  background-color: rgba(0, 0, 1, 0.4);
+ width: 45%;
+  text-align: left;
+  font-family: monospace;
+float: right;}
+
+
+#gifduelos{
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; /* Optional: set a width to see it centered */
+}
+
+/* Imágenes MLT */
+#mltimg1{max-height: 800px;}
+#mltimg2{max-height: 800px;}
+#mltimg3{max-height: 800px;}
+#mltimg4{max-height: 800px;}
+#mltimg5{max-height: 800px;}
+#mltimg6{max-height: 800px;}
+#mltimg7{max-height: 800px;}
+#mltimg8{max-height: 800px;}
+#mltimg9{max-height: 800px;}
+#mltimg10{max-height: 800px;}
+#mltimg11{max-height: 800px;}
+#mltimg12{max-height: 800px;}
+#mltimg13{max-height: 800px;}
+#mltimg14{max-height: 800px;}
 
 
 @media (max-width: 1550px){
@@ -282,21 +346,37 @@ float: right;}
 
 
   #descripcionintermedia{
-    font-size: 10pt;
+    font-size: 9pt;
     line-height: 1.5;
   margin-left: 3%;
-  width: 43%;
+  width: 44%;
   text-align: left;
-  font-family: sans-serif;
+float: left;}
+
+#descripcionintermediaalma{
+    font-size: 9pt;
+    line-height: 1.5;
+  margin-left: 3%;
+  width: 44%;
+  text-align: left;
 float: left;}
 
    #descripcionintermedia2{
-    font-size: 10pt;
+    font-size: 9pt;
     line-height: 1.5;
   margin-left: 3%;
- width: 43%;
+ width: 44%;
   text-align: left;
-  font-family: sans-serif;
+  clear: right;
+float: right;}
+
+#descripcionintermedia2alma{
+    font-size: 9pt;
+    line-height: 1.5;
+  margin-left: 3%;
+ width: 44%;
+  text-align: left;
+  clear: right;
 float: right;}
 
 
@@ -357,7 +437,7 @@ float: right;}
   font-size: 1.5em;
 text-align: center;
 font-weight: bold;
-margin-left: 45%;
+margin-left: 85%;
 width: 10%;
  margin-top: -.5%;
 position: fixed;
