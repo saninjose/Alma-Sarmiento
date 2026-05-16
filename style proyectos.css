@@ -442,6 +442,7 @@ z-index: 96;
 
 #tituloproy{
   font-size: 16pt;
+  margin-left: 0%;
   position: fixed;
   grid-area: tituloproy;}
 
