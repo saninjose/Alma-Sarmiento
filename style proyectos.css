@@ -147,7 +147,7 @@ z-index: 0;
   font-size: 1.5em;
 text-align: center;
 font-weight: bold;
-margin-left: 87.7%;
+margin-left: 90%;
 width: 10%;
 position: fixed;
 z-index: 96;
@@ -442,7 +442,7 @@ z-index: 96;
 
 #tituloproy{
   font-size: 16pt;
-  margin-left: 0%;
+  margin-left: 0;
   position: fixed;
   grid-area: tituloproy;}
 
