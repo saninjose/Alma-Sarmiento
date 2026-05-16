@@ -59,6 +59,36 @@ a {
   z-index: 99;
   }
 
+input[type="radio"] {
+  appearance: none;
+  background-color: yellow;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 0em;
+  height: 0em;
+  border: none;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+/* The inner dot (hidden by default) */
+input[type="radio"]::before {
+  content: "";
+  width: 0em;
+  height: 0em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #2AC176;
+}
+
+/* Show the dot when checked */
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
 
 .figura {
   width: 50%;
