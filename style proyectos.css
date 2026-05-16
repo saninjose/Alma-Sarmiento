@@ -230,7 +230,7 @@ position: relative;
 }
 
 #contenedorcorrespondencia{
-  background-color: blue;
+  background-color: transparent;
   position: relative;
   max-height: 100%;
   clear: both;
@@ -344,6 +344,7 @@ float: right;}
     margin: 5px;
     font-size: 9pt;
     line-height: 1.5;
+     margin-bottom: 5%;
   width: 47%;
   text-align: left;
 float: left;}
@@ -352,6 +353,7 @@ float: left;}
  margin: 5px;
     font-size: 9pt;
     line-height: 1.5;
+    margin-bottom: 5%;
   width: 47%;
   text-align: left;
 float: left;}
@@ -360,6 +362,7 @@ float: left;}
     margin: 5px;
     font-size: 9pt;
     line-height: 1.5;
+     margin-bottom: 5%;
  width: 47%;
   text-align: left;
   clear: right;
@@ -369,6 +372,7 @@ float: right;}
   margin: 5px;
     font-size: 9pt;
     line-height: 1.5;
+     margin-bottom: 5%;
  width: 47%;
   text-align: left;
   clear: right;
@@ -442,7 +446,7 @@ z-index: 96;
 
 #tituloproy{
   font-size: 16pt;
-  margin-left: -1%;
+  margin-left: 0s%;
   position: fixed;
   grid-area: tituloproy;}
 
